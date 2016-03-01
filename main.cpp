@@ -58,19 +58,19 @@ int getIndex(char c)
 
 int test()
 {
-#define SIZE_TIAO  14
-#define SIZE_BING  0
-#define SIZE_WAN  0
-	int tiao[SIZE_TIAO] = {1, 2, 2, 3, 3, 3, 4, 4, 5, 8, 9, 9, 6, 7};
-	int bing[SIZE_BING] = {};
-	int wan[SIZE_WAN] = {};
+#define SIZE_TIAO  9
+#define SIZE_BING  2
+#define SIZE_WAN  3
+	int tiao[SIZE_TIAO] = {2,3,4,4,5,5,6,7,8};
+	int bing[SIZE_BING] = {6,6};
+	int wan[SIZE_WAN] = {4,5,6,};
 
 	CardPlayer		player;
 	CardTable		table;
 
 	MJCard card;
 	card.type = MJTYPE_TIAO;
-	card.value = 7;
+	card.value = 2;
 	player.setBaida(card);
 	int i = 0 ;
 	for(i = 0; i < SIZE_TIAO; i++)
